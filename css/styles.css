@@ -151,6 +151,7 @@ p {
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: #2196f3;
+  color: var(--white-color);
 }
 
 /* ==========End Header========== */

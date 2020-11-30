@@ -144,10 +144,13 @@ p {
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
-.header-tel:focus,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color: var(--accent-color);
+  background: #2196f3;
 }
 
 /* ==========End Header========== */
@@ -377,7 +380,7 @@ p {
 }
 
 .portfolio-list-title {
-  font-weight: 699;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

@@ -6,6 +6,7 @@
   --secondary-text-color: #000000;
   --link-color: #757575;
   --white-color: #ffffff;
+  --icon-color: #afb1b8;
 }
 
 /* * {
@@ -139,6 +140,10 @@ p {
   font-style: normal;
 }
 
+.address-list-item::before {
+  background-image: url(../images/sprite.svg);
+}
+
 .nav-list-link:hover,
 .nav-list-link:focus,
 .header-mail:hover,
@@ -160,6 +165,13 @@ p {
 
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-list {
@@ -294,6 +306,37 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--link-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--white-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
 }
 
 /* ==========End Team========== */
